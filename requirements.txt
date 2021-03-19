@@ -11,7 +11,7 @@ lxml==4.4.2
 nltk==3.4.5
 olefile==0.46
 pdfminer.six==20181108
-Pillow==6.2.1
+Pillow==8.1.1
 pycryptodome==3.9.4
 PyQt5==5.14.0
 PyQt5-sip==12.7.0
