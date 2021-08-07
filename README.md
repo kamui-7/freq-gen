@@ -1,4 +1,4 @@
-# Frequency List Generator
+# freqgen
 
 This is a program that can create a frequency on many different types of text sources. Currently this program supports making frequency lists in two different formats. CSV (Comma seperated values), which can be opened in programs like excel, and plain text files.
 
