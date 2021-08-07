@@ -1,15 +1,6 @@
-6# -*- coding: utf-8 -*-
-
-# self implementation generated from reading ui file 'gui.ui'
-#
-# Created by: PyQt5 UI code generator 5.14.0
-#
-# WARNING! All changes made in this file will be lost!
-
-
+import globals
+import os
 from PyQt5 import QtCore, QtGui, QtWidgets
-import os, globals
-
 
 class ThumbListWidget(QtWidgets.QListWidget):
 
@@ -36,7 +27,7 @@ class ThumbListWidget(QtWidgets.QListWidget):
         self.addItems(files)
 
 class Ui_Form(QtWidgets.QWidget):
-    
+
     def __init__(self):
         super().__init__()
         self.setObjectName("self")
@@ -51,7 +42,8 @@ class Ui_Form(QtWidgets.QWidget):
         self.verticalLayout.addWidget(self.filewidget)
         self.label_3 = QtWidgets.QLabel(self)
         self.label_3.setObjectName("label_3")
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.horizontalLayout_4.addItem(spacerItem)
@@ -88,7 +80,8 @@ class Ui_Form(QtWidgets.QWidget):
         self.addoccur = QtWidgets.QCheckBox(self)
         self.addoccur.setObjectName("checkBox")
         self.horizontalLayout_3.addWidget(self.addoccur)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_3.addItem(spacerItem1)
         self.label_4 = QtWidgets.QLabel(self)
         self.label_4.setObjectName("label_4")
@@ -98,7 +91,8 @@ class Ui_Form(QtWidgets.QWidget):
         self.filetype.addItem("")
         self.filetype.addItem("")
         self.horizontalLayout_3.addWidget(self.filetype)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_3.addItem(spacerItem2)
         self.label_5 = QtWidgets.QLabel(self)
         self.label_5.setObjectName("label_5")
@@ -115,17 +109,18 @@ class Ui_Form(QtWidgets.QWidget):
         self.remove.setText(_translate("self", "Remove"))
         self.clear.setText(_translate("self", "Clear"))
         self.setWindowTitle(_translate("self", "Frequency List Generator"))
-        self.label_2.setText(_translate("self", "Drag and drop files from your computer here"))
+        self.label_2.setText(_translate(
+            "self", "Drag and drop files from your computer here"))
         self.label_3.setText(_translate("self", "Website URL"))
         self.label.setText(_translate("self", "Output Directory"))
         self.choosedirbutton.setText(_translate("self", "..."))
         self.label_4.setText(_translate("self", "Output File Type"))
         self.filetype.setItemText(0, _translate("self", ".txt"))
         self.filetype.setItemText(1, _translate("self", ".csv"))
-        self.label_5.setText(_translate("self", "Start Generating Frequency List"))
+        self.label_5.setText(_translate(
+            "self", "Start Generating Frequency List"))
         self.generate.setText(_translate("self", "Generate"))
         self.addoccur.setText(_translate("Form", "Keep Occurence"))
-
 
 def run():
     import sys
